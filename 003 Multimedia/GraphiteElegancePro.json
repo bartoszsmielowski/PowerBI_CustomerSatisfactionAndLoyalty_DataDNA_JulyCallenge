@@ -1,0 +1,62 @@
+{
+  "name": "Graphite Elegance Pro Extended",
+  "dataColors": [ "#00D1B2", "#E94F64", "#7FA7D6", "#FFA949", "#B295FF", "#457B9D", "#A8DADC", "#8D99AE", "#D4A017" ],
+  "background": "#1E1E1E",
+  "foreground": "#E0E0E0",
+  "tableAccent": "#00D1B2",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [{
+          "fontFamily": "Segoe UI",
+          "fontSize": 13,
+          "color": { "solid": { "color": "#E0E0E0" } }
+        }],
+        "labels": [{
+          "color": "#CCCCCC",
+          "fontSize": 11
+        }],
+        "dataLabels": [{
+          "color": "#E0E0E0",
+          "fontSize": 12
+        }],
+        "header": [{
+          "fontColor": "#E0E0E0",
+          "background": "#2A2A2A"
+        }],
+        "background": [{
+          "color": { "solid": { "color": "#1E1E1E" } }
+        }],
+        "border": [{
+          "color": "#2A2A2A"
+        }]
+      }
+    },
+    "card": {
+      "*": {
+        "callout": [{
+          "color": "#00D1B2",
+          "fontSize": 28
+        }],
+        "title": [{
+          "color": "#CCCCCC"
+        }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{
+          "color": { "solid": { "color": "#1E1E1E" } }
+        }],
+        "items": [{
+          "color": "#E0E0E0",
+          "fontSize": 12
+        }],
+        "title": [{
+          "color": "#CCCCCC",
+          "fontSize": 12
+        }]
+      }
+    }
+  }
+}

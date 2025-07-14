@@ -1,0 +1,16 @@
+{
+  "name": "Graphite Elegance",
+  "dataColors": [ "#00D1B2", "#E94F64", "#7FA7D6", "#CCCCCC", "#E0E0E0", "#FFA949" ],
+  "background": "#1E1E1E",
+  "foreground": "#E0E0E0",
+  "tableAccent": "#00D1B2",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [{ "color": { "solid": { "color": "#E0E0E0" } }, "fontSize": 13 }],
+        "labels": [{ "color": "#CCCCCC" }],
+        "dataLabels": [{ "color": "#CCCCCC" }]
+      }
+    }
+  }
+}
