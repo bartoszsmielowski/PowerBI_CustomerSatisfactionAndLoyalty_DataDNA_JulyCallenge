@@ -3,7 +3,10 @@
 _by Bartosz Smielowski_  
 
 
-![CustomerSatisfactionLoyalty](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndLoyalty_PagesView.png)
+![CustomerSatisfactionLoyalty](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndLoyalty_PagesView.png)  
+
+The performance is shown on video:
+[Video](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndPerformance_VideoPerformance.webm)
 
 ---
 
