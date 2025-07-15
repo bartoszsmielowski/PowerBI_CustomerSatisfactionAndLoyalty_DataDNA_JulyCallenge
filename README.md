@@ -111,7 +111,7 @@ Provides a high-level snapshot of customer satisfaction and loyalty across segme
 
 **Visualizations Used**:  
 - KPI cards (e.g. % High Loyalty, Avg Satisfaction)  
-- Donut charts (Customer Segments)  
+- Combo chart (% High Lovalty vs Avg Satisfaction per Factor Group) 
 - Region map (Loyalty distribution)
 
 **Why These Visuals**:  
@@ -124,30 +124,34 @@ Certain regions show loyalty gaps despite high satisfaction — prompting furthe
 
 ### 🟦 Page 2 — Group & Support  
 
-
+![GroupSupport](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/GroupSupport_PageView.png)
 
 **Purpose**:  
 Compares segments across support-related factors and demographic dimensions.
 
 **Visualizations Used**:  
-- Clustered column charts (Support Availability, Ease of Contact)  
-- Demographic breakdowns (Gender, Age Group)
+- Clustered bar chart (Support Availability, Ease of Contact)  
+- Demographic breakdowns (Gender, Age Group) by Clustered bar chart, Scatter chart and Donuts charts
 
 **Why These Visuals**:  
-They allow side-by-side comparison of satisfaction drivers across segments, revealing behavioral and experiential differences.
+They allow side-by-side comparison of satisfaction across segments, revealing behavioral and experiential differences.
 
 **Key Insight**:  
 Males are more loyal then Females. The 30-39 Age Group is the most loyal.
 
 ---
 
-### 🟦 Page 3 — Factor Drivers
+### 🟦 Page 3 — Factor Drivers  
+
+
 
 **Purpose**:  
 Evaluates which satisfaction factors statistically influence customer loyalty.
 
 **Visualizations Used**:  
-- Matrix table (Factors vs Loyalty %, Avg Satisfaction, Correlation)  
+- Matrix table (Factors vs Loyalty %, Avg Satisfaction, Correlation)
+- Column chart (Factor correlation)
+- Map chart (Location Breakdown - Avg Satisfaction, % High Loyalty, Correlation)
 - Dynamic narrative comments per factor
 
 **Analytical Innovation**:  
