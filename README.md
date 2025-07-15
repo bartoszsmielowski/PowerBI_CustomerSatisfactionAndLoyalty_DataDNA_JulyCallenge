@@ -95,6 +95,8 @@ Below is a breakdown of each page, including its purpose, visual design, and key
 
 ### 🟦 Page 1 — Customer Pulse
 
+  ![CustomerPulse](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerPulse_PageView.png)
+
 **Purpose**:  
 Provides a high-level snapshot of customer satisfaction and loyalty across segments and regions.
 
@@ -111,7 +113,9 @@ Certain regions show loyalty gaps despite high satisfaction — prompting furthe
 
 ---
 
-### 🟦 Page 2 — Group & Support
+### 🟦 Page 2 — Group & Support  
+
+
 
 **Purpose**:  
 Compares segments across support-related factors and demographic dimensions.
