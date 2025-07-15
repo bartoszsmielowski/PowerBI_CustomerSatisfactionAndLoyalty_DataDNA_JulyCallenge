@@ -2,7 +2,6 @@
 **Power BI Project | DataDNA July Challenge**  
 _by Bartosz Smielowski_  
 
-
 ![CustomerSatisfactionLoyalty](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndLoyalty_PagesView.png)  
 
 The performance is shown on video:
@@ -31,7 +30,6 @@ This report delivers clarity, insight, and direction for organizations seeking t
 
 ---  
 
-
 ## 🧭 Overview
 
 This Power BI report was developed as part of the **DataDNA July Challenge**, a global initiative focused on data storytelling and visualization excellence.
@@ -41,9 +39,6 @@ Identify key drivers of customer satisfaction and loyalty, uncover strategic gap
 
 👥 **Audience**:  
 CX leaders, strategy teams, and executive stakeholders
-
----
-
 
 ---
 
@@ -143,7 +138,7 @@ Males are more loyal then Females. The 30-39 Age Group is the most loyal.
 
 ### 🟦 Page 3 — Factor Drivers  
 
-
+![FactorDrivers](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/FactorDrivers_PageView.png)
 
 **Purpose**:  
 Evaluates which satisfaction factors statistically influence customer loyalty.
