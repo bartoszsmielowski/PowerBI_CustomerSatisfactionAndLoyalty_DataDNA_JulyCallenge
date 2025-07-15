@@ -43,18 +43,18 @@ CX leaders, strategy teams, and executive stakeholders
 
 ## 🗃️ Dataset Summary
 
-The dataset includes customer records with attributes such as:
+The dataset (orgin - .csv) includes customer records with attributes such as:
 
 - Customer Segment (Group A / B)  
 - Demographics (Gender, Age Group, Region)  
-- Satisfaction ratings across multiple dimensions  
-- Loyalty indicator  
+- Satisfaction ratings  
+- Loyalty rating 
 - Purchase history
 
 🔍 **Initial Observations**:
 - Inconsistent completeness across satisfaction factors  
 - Regional skewness in customer distribution  
-- Loyalty paradox: returning customers show lower retention
+- Paradox: returning customers show lower loyalty
 
 ---
 
@@ -62,8 +62,7 @@ The dataset includes customer records with attributes such as:
 
 ✔️ **Cleaning Steps**:
 - Removed duplicates  
-- Standardized categorical fields  
-- Converted satisfaction scores to decimals  
+- Standardized categorical fields   
 
 🔧 **Shaping & Modeling**:
 - Built dimension tables such as: `Dim_Satisfaction`, `Dim_Customer`, `Dim_Location`, `Dim_Loyalty`  
@@ -79,8 +78,7 @@ Implemented a star schema for clarity and performance.
 🔗 **Key Measures**:
 - `% HighLoyalty`  
 - `AvgSatisfaction`  
-- `Factor_Correlation_WithFallback`  
-- `SR_StrategicNarrativeComment` (dynamic storytelling)
+- `Factor_Correlation`  
 
 📐 **Model Highlights**:
 - Clear relationships between dimensions and fact  
@@ -88,60 +86,89 @@ Implemented a star schema for clarity and performance.
 
 ---
 
-## 📊 Report Pages
+## 📊 Report Pages — Analytical Breakdown
 
-### 🟦 Page 1 — Executive Summary  
-- Highlights top loyalty drivers: Brand Reputation, Ease of Use, Support Availability  
-- Group A shows highest satisfaction and loyalty  
-- Loyalty paradox identified among repeat customers
-
-### 🟦 Page 2 — Segment & Region Analysis  
-- Regional breakdown of loyalty performance  
-- Action panel for targeted retention strategies
-
-### 🟦 Page 3 — Factor Deep Dive  
-- Tabular view of satisfaction factors  
-- Includes correlation, loyalty %, and strategic recommendations
-
-### 🟦 Page 4 — Strategic Loyalty Drivers  
-- Scatter chart showing correlation vs actual retention  
-- Commentary highlights strategic gaps (e.g. Brand Reputation)
-
-### 🟦 Page 5 — Tooltip Intelligence  
-- Detailed factor-level breakdown  
-- Dynamic DAX commentary for each factor
+This report consists of **four analytical pages**, each designed to guide the user from high-level understanding to strategic action.  
+Below is a breakdown of each page, including its purpose, visual design, and key insights.
 
 ---
 
-## 🧠 Dynamic Commentary (DAX)
+### 🟦 Page 1 — Customer Pulse
 
-A key innovation is the use of **narrative DAX measures** to generate strategic insights:
+**Purpose**:  
+Provides a high-level snapshot of customer satisfaction and loyalty across segments and regions.
 
-```dax
-SR_StrategicNarrativeComment =
-VAR Corr = [# Factor_Correlation_WithFallback]
-VAR Loyalty = [% HighLoyalty]
-VAR CorrText =
-    SWITCH(
-        TRUE(),
-        Corr >= 0.6, "shows a strong correlation with loyalty",
-        Corr >= 0.4, "shows a moderate correlation with loyalty",
-        Corr >= 0.2, "shows a weak correlation with loyalty",
-        Corr > 0, "shows a very weak correlation with loyalty",
-        Corr = 0, "shows no correlation with loyalty",
-        Corr < 0, "shows a negative correlation with loyalty"
-    )
-VAR LoyaltyText =
-    SWITCH(
-        TRUE(),
-        Loyalty >= 0.25, "generates high retention",
-        Loyalty >= 0.15, "delivers fair retention",
-        Loyalty >= 0.05, "underperforms in actual retention",
-        Loyalty < 0.05, "is linked to very low loyalty"
-    )
+**Visualizations Used**:  
+- KPI cards (e.g. % High Loyalty, Avg Satisfaction)  
+- Donut charts (Customer Segments)  
+- Region map (Loyalty distribution)
 
-RETURN
-    "This factor " & CorrText & " and " & LoyaltyText & 
-    ". Focused effort here could help reinforce or unlock loyalty potential."
+**Why These Visuals**:  
+They offer immediate orientation — showing where loyalty is strongest, which groups dominate, and how satisfaction varies geographically.
+
+**Key Insight**:  
+Certain regions show loyalty gaps despite high satisfaction — prompting further investigation.
+
+---
+
+### 🟦 Page 2 — Group & Support
+
+**Purpose**:  
+Compares segments across support-related factors and demographic dimensions.
+
+**Visualizations Used**:  
+- Clustered column charts (Support Availability, Ease of Contact)  
+- Demographic breakdowns (Gender, Age Group)
+
+**Why These Visuals**:  
+They allow side-by-side comparison of satisfaction drivers across segments, revealing behavioral and experiential differences.
+
+**Key Insight**:  
+Males are more loyal then Females. The 30-39 Age Group is the most loyal.
+
+---
+
+### 🟦 Page 3 — Factor Drivers
+
+**Purpose**:  
+Evaluates which satisfaction factors statistically influence customer loyalty.
+
+**Visualizations Used**:  
+- Matrix table (Factors vs Loyalty %, Avg Satisfaction, Correlation)  
+- Dynamic narrative comments per factor
+
+**Analytical Innovation**:  
+A custom **correlation measure** was created to assess the strength of relationship between satisfaction and loyalty:  
+
+`Factor_Correlation =  
+VAR X = [AvgSatisfaction]  
+VAR Y = [% HighLoyalty]  
+RETURN  
+CORREL(X, Y)`  
+
+**Why This Matters?**  
+Raw satisfaction scores can be misleading — correlation reveals which factors truly drive retention. This approach distinguishes popular features from strategic loyalty drivers, enabling smarter prioritization.
+
+**Key Insight**: Factors like Brand Reputation and Support Availability show strong correlation with loyalty, while others (e.g. Price Perception) may be overvalued.  
+
+---  
+  
+### 🟦 Page 4 — Strategic Recommendations  
+
+**Purpose**:
+Synthesizes correlation and retention data to highlight strategic gaps and opportunities.
+
+**Visualizations Used**:
+- Scatter chart (Correlation vs High Loyalty %)
+- Narrative textbox with dynamic commentary
+- Icon-based recommendation panel
+
+**Why These Visuals**: 
+The scatter chart visualizes tension between potential impact and actual performance — ideal for identifying underleveraged factors.
+
+**Key Insight**: 
+For example, Brand Reputation shows strong correlation but low retention — indicating a strategic gap. This page transforms data into decisions, guiding where to invest for maximum loyalty impact.
+  
+---
 
 
