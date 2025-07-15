@@ -1,6 +1,9 @@
 # 📊 Customer Satisfaction & Loyalty Analytics  
 **Power BI Project | DataDNA July Challenge**  
-_by Bartosz Smielowski_
+_by Bartosz Smielowski_  
+
+
+![CustomerSatisfactionLoyalty](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndLoyalty_PagesView.png)
 
 ---
 
