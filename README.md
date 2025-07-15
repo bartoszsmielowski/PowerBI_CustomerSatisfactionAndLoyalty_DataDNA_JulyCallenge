@@ -6,7 +6,7 @@ _by Bartosz Smielowski_
 ![CustomerSatisfactionLoyalty](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndLoyalty_PagesView.png)  
 
 The performance is shown on video:
-[Video](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/CustomerSatisfactionAndPerformance_VideoPerformance.webm)
+[Video](https://www.awesomescreenshot.com/video/42052588?key=41fbf4e04cc637eb33b4e349a3529ae5)
 
 ---
 
