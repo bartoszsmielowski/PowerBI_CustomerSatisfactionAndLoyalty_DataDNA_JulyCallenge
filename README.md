@@ -74,7 +74,7 @@ includes customer records with attributes such as:
 - Created fact table: `Fact_CustomerSatisfaction`  
 - Merged demographic data for unified analysis
 
-  
+  ![Tables](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/Tables_PowerQuery.png)
 
 ---
 
