@@ -26,7 +26,7 @@ Perfect for showcasing analytical depth and communication skills.
 
 # 🏁 Conclusion  
 Customer satisfaction is more than a score — it’s a strategic lens into loyalty behavior and business growth. 
-This report delivers clarity, insight, and direction for organizations seeking to improve retention and CX outcomes.
+This report delivers clarity, insight, and direction for organizations seeking to improve retention and Customer eXperience outcomes.
 
 ---  
 
@@ -166,6 +166,8 @@ Raw satisfaction scores can be misleading — correlation reveals which factors 
 ---  
   
 ### 🟦 Page 4 — Strategic Recommendations  
+
+![Recommendations](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/Recommendations_PageView.png)
 
 **Purpose**:
 Synthesizes correlation and retention data to highlight strategic gaps and opportunities.
