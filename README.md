@@ -80,7 +80,9 @@ includes customer records with attributes such as:
 
 ## 🧩 Data Model (Power BI)
 
-Implemented a star schema for clarity and performance.
+Implemented a star schema for clarity and performance.  
+
+![StarSchema](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/StarSchema.png)
 
 🔗 **Key Measures**:
 - `% HighLoyalty`  
