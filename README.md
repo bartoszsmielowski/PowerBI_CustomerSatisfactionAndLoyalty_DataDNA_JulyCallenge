@@ -46,7 +46,9 @@ CX leaders, strategy teams, and executive stakeholders
 
 ## 🗃️ Dataset Summary
 
-The dataset (orgin - .csv) includes customer records with attributes such as:
+The dataset (orgin - .csv)   
+
+includes customer records with attributes such as:
 
 - Customer Segment (Group A / B)  
 - Demographics (Gender, Age Group, Region)  
@@ -54,10 +56,7 @@ The dataset (orgin - .csv) includes customer records with attributes such as:
 - Loyalty rating 
 - Purchase history
 
-🔍 **Initial Observations**:
-- Inconsistent completeness across satisfaction factors  
-- Regional skewness in customer distribution  
-- Paradox: returning customers show lower loyalty
+  ![Dataset](https://github.com/bartoszsmielowski/PowerBI_CustomerSatisfactionAndLoyalty_DataDNA_JulyCallenge/blob/main/003%20Multimedia/Dataset_View.png)
 
 ---
 
@@ -71,6 +70,8 @@ The dataset (orgin - .csv) includes customer records with attributes such as:
 - Built dimension tables such as: `Dim_Satisfaction`, `Dim_Customer`, `Dim_Location`, `Dim_Loyalty`  
 - Created fact table: `Fact_CustomerSatisfaction`  
 - Merged demographic data for unified analysis
+
+  
 
 ---
 
