@@ -32,7 +32,7 @@ This report delivers clarity, insight, and direction for organizations seeking t
 
 ## 🧭 Overview
 
-This Power BI report was developed as part of the **DataDNA July Challenge**, a global initiative focused on data storytelling and visualization excellence.
+This Power BI report was developed fully by myself, as part of the **DataDNA July Challenge**, a global initiative focused on data storytelling and visualization excellence.
 
 🎯 **Objective**:  
 Identify key drivers of customer satisfaction and loyalty, uncover strategic gaps, and deliver actionable insights for business decision-makers.
@@ -44,9 +44,7 @@ CX leaders, strategy teams, and executive stakeholders
 
 ## 🗃️ Dataset Summary
 
-The dataset (orgin - .csv)   
-
-includes customer records with attributes such as:
+The dataset (orgin - .csv) includes customer records with attributes such as:
 
 - Customer Segment (Group A / B)  
 - Demographics (Gender, Age Group, Region)  
@@ -107,7 +105,7 @@ Provides a high-level snapshot of customer satisfaction and loyalty across segme
 **Visualizations Used**:  
 - KPI cards (e.g. % High Loyalty, Avg Satisfaction)  
 - Combo chart (% High Lovalty vs Avg Satisfaction per Factor Group) 
-- Region map (Loyalty distribution)
+- Region map (Satisfaction distribution)
 
 **Why These Visuals**:  
 They offer immediate orientation — showing where loyalty is strongest, which groups dominate, and how satisfaction varies geographically.
@@ -173,6 +171,7 @@ Raw satisfaction scores can be misleading — correlation reveals which factors 
 Synthesizes correlation and retention data to highlight strategic gaps and opportunities.
 
 **Visualizations Used**:
+- MATRIX (Loyalty distribution through Locations)
 - Scatter chart (Correlation vs High Loyalty %)
 - Narrative textbox with dynamic commentary
 - Icon-based recommendation panel
